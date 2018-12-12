@@ -1,0 +1,394 @@
+/* ---------General Styles--------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  background: #FCFEFE;
+}
+
+a {
+  padding: 0;
+  border: none;
+}
+
+.logo {
+  height: 25rem;
+}
+
+header {
+  background-color: #040404;
+}
+
+.nav-link {
+  color: #eef7f4;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #19AF9A;
+  background-color: #CAFCEB;
+}
+
+.tagline {
+  color: white;
+  font-family: 'Courgette', cursive;
+}
+
+footer {
+  background-color: #040404;
+  margin-top: 3rem;
+  padding: 10px;
+  color: white;
+}
+
+.pix-border {
+  border: 4px solid #19AF9A;
+  box-shadow: 5px 5px -2px grey;
+}
+
+.btn {
+  background-color: #19AF9A;
+  color: #eef7f4 !important;
+  transition: transform .4s;
+}
+
+.btn:hover {
+  /* transform: scale(.99); */
+  background-color: #1DC6AE;
+  /* border: solid 3px #D8ECE9; */
+  color: #eef7f4;
+}
+
+.btn-footer {
+  padding: 2px;
+  margin-left: 1em;
+  background-color: #eef7f4;
+  color: #19AF9A !important;
+  font-size: .75em;
+}
+
+/*---------- Home Page ----------*/
+.home-pix {
+  /* height: 20em; */
+  background-color:  #eef7f4;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 3rem 1% 0;
+}
+
+ #home-pix {
+  margin: auto;
+}
+
+#home-pix img:nth-of-type(1) {
+  width: 27%;
+}
+
+#home-pix img:nth-of-type(2) {
+  width: 37%;
+}
+
+#home-pix img:nth-of-type(3) {
+  width: 27%;
+}
+
+.main-content-home {
+  margin-top: 2rem;
+}
+
+.main-content-home h1 {
+  font-weight: bold;
+}
+
+
+/* ---------Issue Page ------------*/
+.issue-pix,
+#current-issue {
+  width: 100%;
+  display: block;
+  padding: 30px;
+  background: #eef7f4;
+  margin: 30px auto 15px;
+  border-radius: 15px;
+}
+
+
+.remove-border {
+    border: none;
+}
+
+
+.container #issue-pix {
+  margin: auto;
+}
+
+figcaption {
+  margin: 0 auto -20px;
+}
+
+.btn-other-issues {
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+
+.issue-pix h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.btn-order,
+.more-info-btn,
+.btn-other-issues {
+  display: block;
+  margin: 30px auto 0;
+  font-size: 1.333em;
+}
+
+
+
+/*---------- Feature Page -------------*/
+
+#feature-pix {
+  width: 150px;
+  border-radius: 50%;
+  margin: 30px;
+  display: inline-block;
+}
+
+.feature-order {
+  padding: 20px;
+  background: #eef7f4;
+  border-radius: 15px;
+}
+
+.feature-order h2 {
+  text-align: center;
+}
+
+#btn-group-center {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#btn-group-center a {
+  margin: 15px;
+}
+
+/* ------------Contact Page -------------*/
+
+legend {
+  font-size: 1em;
+}
+
+legend {
+  margin-top: 20px;
+  margin-bottom: -2px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background-color: white;
+  box-shadow: 2px 2px 3px 2px;
+  display: block;
+  margin: auto;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.contact-container {
+  width: 60%;
+}
+
+#contact-head {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.contact-send-btn {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+}
+
+#subscribe-checkbox,
+label {
+  margin: 20px 0;
+}
+
+label {
+  margin-left: 10px;
+}
+
+
+
+/* ----Screen above 769px---- */
+
+@media (min-width: 769px) {
+
+/* ---------General Styles -----------*/
+body {
+  font-size: 1.25em;
+}
+
+.tagline {
+  /* float: right; */
+  padding: 50px 100px 0 0;
+  font-size: 1.777rem;
+  display: inline-block;
+}
+
+.logo {
+  margin: -50px -100px -200px -50px;
+  display: inline-block;
+}
+
+.nav {
+  padding: 0 50px;
+  background: #19AF9A;
+  font-size: 1.777rem;
+}
+
+.col-sm {
+  margin: 50px;
+}
+
+#social-media {
+  float: right;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 90%
+}
+
+#banner {
+  display: flex;
+}
+
+/* --------------Issues Page ----------*/
+
+/* .issue-pix {
+    margin: 15px 2.5% 30px;
+} */
+
+.container #current-issue {
+  width: 100%;
+  display: block;
+  /* height: 515px; */
+  background: #eef7f4;
+  border-radius: 15px;
+}
+
+#current-issue img {
+  /* margin: 0 30px 30px 0; */
+  float: right;
+  height: 455px;
+  margin-left: 20px;
+}
+
+#current-issue p {
+  font-size: .95em;
+  margin-right: 3em;
+}
+
+.p-top {
+  margin-top: -.5em;
+}
+
+.btn-order {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+/* --------------Feature Page ----------*/
+
+#feature-heading {
+  margin-top: 85px;
+  display: inline-block;
+}
+
+#feature-pix {
+  float: left;
+}
+
+#make-block {
+  display: block;
+}
+
+
+/* -------------- Contact Page------------- */
+
+
+
+.contact-email {
+  display: inline-block;
+}
+
+legend {
+  margin-top: -28px;
+}
+
+input {
+  margin-right: 25px;
+}
+
+fieldset {
+  margin-bottom: 60px;
+}
+
+.contact-send-btn {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+}
+
+
+ /* -------------- Grid------------- */
+/* #feature-head {
+  display: flex;
+} */
+
+/**
+* A quick baseline grid overlay using css+svg.
+* Inspired by [Basehold.it](https://basehold.it/).
+* @author leshido
+*/
+
+/* body {
+    position: relative;
+}
+
+body::after {
+    /* Change the `height` parameter here to match your base line-height. */
+    /* background: url('data:image/svg+xml;utf8,<svg height="27" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(0, 255, 255, 0.3)" /></svg>') repeat top left;
+
+    content: "";
+    display: block;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+}
+
+body:active::after { */
+    /* display: none; */
+/* } */
+/* -----------end grid ---------*/
